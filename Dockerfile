@@ -8,6 +8,8 @@ RUN apt-get update \
       #   libx11-xcb1 \
      && apt-get clean all \
      && apt-get install libgomp1 \ 
+     && apt-get install -y gcc \ 
+     && apt-get install -y python3-dev \ 
      && rm -r /var/lib/apt/lists/*
      
 
